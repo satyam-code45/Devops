@@ -8,7 +8,11 @@ const app = new Hono()
 
 app.get('/', (c) => {
   return c.json({
-    message: "Hello from Satyam"
+    message: "Hello! Please use any of these to acess the other route as they are post route",
+    hoppscotch : "https://hoppscotch.io/",
+    Postman: "https://www.postman.com/",
+    Signup : "https://hono-app.satyamwrites23.workers.dev/api/v1/sign-up?userId=45"
+
   })
 })
 
@@ -36,13 +40,13 @@ app.post('/api/v1/sign-up',async (c) => {
 
 app.post('/api/v1/sign-in', (c) => {
   return c.json({
-    message: "User is Satyam"
+    message: "Coming soon"
   })
 })
 
 app.post('/api/v1/todo', (c) => {
   return c.json({
-    message: "User is Satyam"
+    message: "Comming soon"
   })
 })
 
